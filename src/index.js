@@ -14,4 +14,9 @@ app.listen(PORT, () => {
 app.use(middlewareLogRequest);
 app.use(express.json());
 
+app.use("/", (req, res) => {
+  res.send(
+    `express-mysql-practice by <a href="https://killflex.vercel.app">killflex</a> on vercel`
+  );
+});
 app.use("/users", usersRoutes);
