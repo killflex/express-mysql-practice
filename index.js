@@ -2,8 +2,8 @@ const express = require("express");
 require("dotenv").config();
 const PORT = process.env.PORT || 5000;
 
-const mainRouter = require("./routes/index.js");
-const middlewareLogRequest = require("./middleware/logs.js");
+const mainRouter = require("./src/routes/index.js");
+const middlewareLogRequest = require("./src/middleware/logs.js");
 
 const app = express();
 
